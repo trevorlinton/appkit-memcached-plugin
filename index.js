@@ -1,3 +1,4 @@
+'use strict'
 
 function print_stats(appkit, args) {
   console.assert(args.app, 'No app was specified.');
