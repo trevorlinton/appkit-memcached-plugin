@@ -14,7 +14,7 @@ function flush_cache(appkit, args) {
 
 module.exports = {
 	init:function(appkit){
-    let create_build_option = {
+    let apps_options = {
       'app':{
         'alias':'a',
         'demand':true,
