@@ -22,8 +22,8 @@ module.exports = {
         'description':'The app memcached is installed on on.'
       }
     };
-    appkit.args.command('memcached <ADDON>','print out stats from the specified memcached', apps_options, print_stats);
-    appkit.args.command('memcached:flush <ADDON>','flushes the cache from the specified memcached', apps_options, flush_cache);
+    appkit.args.command('memcached <ADDON>','print out stats from the specified memcached', apps_options, print_stats.bind(null, appkit));
+    appkit.args.command('memcached:flush <ADDON>','flushes the cache from the specified memcached', apps_options, flush_cache.bind(null, appkit));
 	},
 	update:function(){},
 	group:'memcached',
